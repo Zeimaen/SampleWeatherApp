@@ -79,6 +79,6 @@ app.get('/init', function (req, res) {
 })
 
 //Start Server
-app.listen(3000, function () {
-    console.log('Sample weather app listening on port 3000!')
+app.listen(8080, function () {
+    console.log('Sample weather app listening on port 8080!')
 })
