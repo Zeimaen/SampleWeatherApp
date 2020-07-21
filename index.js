@@ -6,7 +6,7 @@ const request = require('request');
 const sqlite3 = require('sqlite3').verbose();
 const app = express();
 //Define OpenWeatherMap API Key
-const apiKey = 'bf54c78a174a299d6d795a4f55c90792';
+const apiKey = process.env.WEATHER_API_KEY;
 
 //Setup Express App
 app.use(serveStatic(path.join(__dirname, 'public')));
