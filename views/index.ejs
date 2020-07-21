@@ -21,6 +21,12 @@
           <p><%= error %></p>
         <% } %>
       </fieldset>
+      <h2>History:</h2>
+      <ul>
+        <% for (var key in history){ %>
+          <li><%=history[key].time %> - <%=history[key].city %>: <%=history[key].temp %> &#8451;</li>
+        <% } %>
+      </ul>
     </div>
   </body>
 </html>
